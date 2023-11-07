@@ -33,7 +33,7 @@ const Portfolio = () => {
               <p className='py-6'>Lihat karya karya yang sudah saya buat dibawah ini</p>
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-              {portfolio.map(({ id, src }) => (
+              {portfolio.map(({ id, src, url }) => (
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                   <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
                   <div className='flex items-center justify-center'>
