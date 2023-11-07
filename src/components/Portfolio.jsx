@@ -1,7 +1,7 @@
 import React from 'react'
 import uiHasil1 from  "../assets/uiHasil1.png";
 import uiHasil2 from  "../assets/uiHasil2.png";
-// import uiHasil3 from  "../assets/uiHasil3.png";
+import uiHasil3 from  "../assets/uiHasil3.png";
 // import uiHasil5 from  "../assets/uiHasil5.png";
 
 const Portfolio = () => {
@@ -9,11 +9,18 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 1,
-            src: uiHasil1
+            src: uiHasil1,
+            url: 'https://www.figma.com/file/LyWuzJ8YWIAEx2ySF2724c/Login-Page?type=design&t=jHO32l3JpktyN2NY-6'
         },
         {
             id: 2,
-            src: uiHasil2
+            src: uiHasil2,
+            url: 'https://www.figma.com/file/L8AYtNMUPFqEGdSEiXElET/Chat-Interface?type=design&t=jHO32l3JpktyN2NY-6'
+        },
+        {
+            id: 3,
+            src: uiHasil3,
+            url: 'https://www.figma.com/file/h1Xq4Vt6YlzudHUUTYb8Px/Website---Aplikasi-Berita-Yopkrak?type=design&t=jHO32l3JpktyN2NY-6'
         },
         
     ];
@@ -30,8 +37,8 @@ const Portfolio = () => {
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                   <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
                   <div className='flex items-center justify-center'>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'>Demo</button>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'>Code</button>
+                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'><a href={url}>Demo</a></button>
+                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'><a href={url}>Sample</a></button>
                   </div>
                 </div>
               ))}
