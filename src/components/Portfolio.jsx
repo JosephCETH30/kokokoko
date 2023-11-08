@@ -1,8 +1,8 @@
 import React from 'react'
 import uiHasil1 from  "../assets/uiHasil1.png";
 import uiHasil2 from  "../assets/uiHasil2.png";
-import uiHasil3 from  "../assets/uiHasil3.png";
-// import uiHasil5 from  "../assets/uiHasil5.png";
+import uiHasil3new from  "../assets/uiHasil3new.png";
+import uiHasil4new from  "../assets/uiHasil4new.png";
 
 const Portfolio = () => {
 
@@ -19,8 +19,13 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            src: uiHasil3,
-            url: 'https://www.figma.com/file/h1Xq4Vt6YlzudHUUTYb8Px/Website---Aplikasi-Berita-Yopkrak?type=design&t=jHO32l3JpktyN2NY-6'
+            src: uiHasil3new,
+            url: 'https://www.figma.com/file/msrogHFB7lxpUC2quv58pb/Toko-Online-(E-Commerce)?type=design&t=OTvl2GB0jtbPuSfc-6'
+        },
+        {
+            id: 4,
+            src: uiHasil4new,
+            url: 'https://www.figma.com/file/rEzlCoJ2XOeCVlRcdUAGZr/Dark-Portoflio-Website-Sketch---Pyoseph-(Community)?type=design&node-id=9-2&mode=design&t=FMWtl3FLcheGkyBA-0'
         },
         
     ];
